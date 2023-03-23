@@ -1,11 +1,11 @@
-// const introVideo = document.getElementById('intro-video');
-// const animation = document.getElementById('animation');
-// introVideo.addEventListener('ended', () => {
-//   animation.classList.add('fade-out');
-//   setTimeout(() => {
-//     animation.style.display = 'none';
-//   }, 1200); // 2秒後にアニメーションを非表示にする
-// });
+ const introVideo = document.getElementById('intro-video');
+ const animation = document.getElementById('animation');
+ introVideo.addEventListener('ended', () => {
+ animation.classList.add('fade-out');
+  setTimeout(() => {
+    animation.style.display = 'none';
+   }, 1200); // 2秒後にアニメーションを非表示にする
+ });
 
 const submitButton = document.getElementById("submitButton");
   submitButton.addEventListener("click", function() {
