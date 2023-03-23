@@ -1,0 +1,404 @@
+body {
+  background: linear-gradient(#000000, #2e2e2e, #828282, #ffffff);
+  width: 100%;
+  /*ページ全体の幅は100%と指定する*/
+  height: 100%;
+}
+
+.headerul {
+  display: flex;
+  flex-direction: table-row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  height: 100%;
+}
+
+.headerli {
+  list-style: none;
+}
+
+.headera {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+}
+
+a:hover {
+  color: rgba(255, 0, 0, 0.703);
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  background: #000000;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.menu-group {
+  display: flex;
+  flex-direction: table-row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+title {
+  margin-right: auto;
+}
+
+.menu-item {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.title-slide {
+  width: 30%;
+  height: 30%;
+  margin: auto;
+
+}
+
+.informationtext {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.testerliner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+div.center {
+  text-align: center;
+  z-index: 1;
+}
+
+.image_box {
+  width: 150px;
+  display: inline-block;
+}
+
+img {
+  display: block;
+  transition: .3s;
+}
+
+.img_1 {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.img_2 {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.img_1:hover {
+  opacity: 0;
+}
+
+.hover {
+  overflow: hidden;
+  position: relative;
+}
+
+.takeyourstar {
+  font-size: 22px;
+  color: hwb(0 100% 0%);
+  font-weight: bold;
+  line-height: 1.75;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(184, 184, 184, 0.678);
+  font-style: italic;
+  font-family: Times New Roman, "ＭＳ Ｐゴシック";
+}
+
+.testerinformation {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.5;
+  text-align: center;
+  padding-right: 88px;
+  padding-left: 88px;
+}
+
+
+.member-status {
+  position: relative;
+  height: 400px;
+  width: 280px;
+}
+
+.member-status img {
+  position: absolute;
+  height: 100%;
+}
+
+.member-status img.tester-status-hover {
+  display: none;
+}
+
+.member-status:hover img.tester-information {
+  display: none;
+}
+
+.member-status:hover img.tester-status-hover {
+  display: block
+}
+
+.h-200 {
+  max-height: 560.917px;
+}
+
+.vtickstatus {
+  width: 280px;
+  height: 410.667px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.tester-member-official-img {
+  width: 300px;
+  height: 400px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tester-member-official-img-cheyul {
+  width: 300px;
+  height: 482.885px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.byo {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  gap: 20px;
+  padding: 20px;
+  /* 余白指定 */
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+@media screen and (max-width:800px) {
+  .byo {
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+
+.twitter-timeline {
+  width: 400px;
+  height: 500px;
+}
+
+.instagram-media {
+  width: 400px;
+  height: 500px;
+}
+
+.tester-sns {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  gap: 20px;
+  padding: 20px;
+  /* 余白指定 */
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.frame_center {
+  text-align: center;
+}
+
+.groupshoukai {
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.informationtext-horror {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.75;
+  text-align: center;
+}
+
+#animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1.2s ease-in-out;
+}
+
+#animation.fade-out {
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+#intro-video {
+  width: 100%;
+  height: auto;
+}
+
+form {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#search {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+#learn-btn {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#image {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+#inputText {
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#submitButton {
+  background: -moz-linear-gradient(left, rgba(60, 1, 255, 0.647), #ff2fb6bf 30%,rgb(249, 159, 49)70%,rgb(251, 221, 180)); 
+  background: -webkit-linear-gradient(left, rgba(60, 1, 255, 0.647), #ff2fb6bf 30%,rgb(249, 159, 49)70%, rgb(251, 221, 180)); 
+  background: linear-gradient(to right, rgba(60, 1, 255, 0.647), #ff2fb6bf 30%,rgb(249, 159, 49)70%, rgb(251, 221, 180)); 
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+button{
+
+  opacity:0.8;
+   /*キラッと光る基点とするためrelativeを指定*/
+   position: relative;
+   /*ボタンの形状*/
+   display: inline-block;
+   outline: none;
+   overflow: hidden;
+}
+button::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:-75%;
+  width:50%;
+  height:100%;
+  background:linear-gradient(to right, rgba(255,255,255,0)0%,rgba(255,255,255,.3)100%);
+  transform:skewX(-25deg);
+}
+button:hover::before{
+  animation:shine 0.7s;
+}
+@keyframes shine{
+  100%{
+      left:125%;
+  }
+}
+
+.tokuseibox {
+  position: relative;
+
+}
+
+.tokusei {
+  width: 40%;
+  margin-left: 381px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.nectar {
+  position: absolute;
+  top: 130px;
+  left: 511px;
+  text-align:  center;   
+}
+.chaosu{
+  margin-left: 50px;
+}
+
+.kowai {
+  margin: auto;
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+
+.relative-kowai {
+  position: relative;
+}
+
+.absolute-kowai {
+  position: absolute;
+  top: 245px;
+  left: 728px;
+}
+
+.kong {
+  width: 15%;
+  height: 15%;
+  cursor: pointer;
+}
+
+.kongkawaii {
+  width: 60%;
+  height: 60%;
+  cursor: pointer;
+  display: none;
+
+}
+.aaaaaaaaaaaaaaaa{
+  display: flex;
+  justify-content: center;
+}
