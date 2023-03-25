@@ -11,7 +11,7 @@ const submitButton = document.getElementById("submitButton");
   submitButton.addEventListener("click", function() {
     const inputText = document.getElementById("inputText").value;
     if (inputText === "ネクタル") {
-      window.location.href = "https://monetao.github.io/deviewordiefanmadehomepage/final%20work/deviewordie.html";
+      window.location.href = "https://monetao.github.io/Debut-Die.fanmade.homepage/final%20work/Debut&Die.html";
     }
   });
 
